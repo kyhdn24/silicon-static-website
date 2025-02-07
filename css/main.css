@@ -5,6 +5,7 @@
 :root {
     --text-color: #565973;
     --text-muted-color: #9397AD;
+    --text-headline-color: #0B0F19;
     --background-color: #ffffff;
     --link-color: #6366F1;
 
@@ -23,6 +24,8 @@
 }
 [data-theme="dark"] {
     --text-color: #ffffff;
+    --text-muted-color: #9397AD;
+    --text-headline-color: #ffffff;
     --background-color: #0B0F19;
     --link-color: #A78BFA;
 
@@ -35,6 +38,8 @@
     --switch-slider-background-color: #4f46e5;
 
     --border-color: #2F333B;
+
+    --section-background-color: rgba(255,255,255, 0.07);
 }
 html, body {
     margin: 0;
@@ -54,6 +59,12 @@ a {
         text-decoration: underline;
     }
 }
+
+h1,h2,h3,h4,h5,h6 {
+    color: var(--text-headline-color);
+}
+
+
 
 .wrapper {
     display: grid;
@@ -345,3 +356,46 @@ section {
         text-align: center;
     }
 }
+
+
+#money-transfer-section {
+    padding: 4rem 0;
+
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        gap: 8rem;
+
+        .column {
+            .content {
+                width: 70%;
+                margin-left: auto;
+            }
+        }
+    }
+
+    .section-title {
+        h2 {
+            font-size: 32px;
+        }
+    }
+
+    .section-body {
+
+        ul {
+            li {
+
+            }
+        }
+
+        a {
+            display: inline-block;
+        }
+    }
+
+}
+
+
+
+
